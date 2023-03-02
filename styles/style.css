@@ -1,11 +1,52 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Libre Franklin';
+    src: url('../fonts/libre-franklin-black.otf') format(opentype);
+}
 
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
 
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #5d17eb;
+}
+
+main{
+    width: 100%;
+    text-align: center;
+    margin-top: 90px;
+}
+
+main h1{
+    font-family: 'Libre Franklin';
+    text-transform: uppercase;
+    color: #ffe136;
+    text-align: center;
+}
+
+main p{
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    width: 80%;
+    font-size: 1.2em;
+    position: relative;
+    transform: translate(-50%);
+    left: 50%;
+}
+
+
 
 
