@@ -23,7 +23,7 @@ body{
 main{
     width: 100%;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 50px;
 }
 
 main h1{
@@ -43,6 +43,10 @@ main p{
     position: relative;
     transform: translate(-50%);
     left: 50%;
+}
+
+main img{
+    width: 150px;
 }
 
 
