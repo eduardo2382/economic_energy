@@ -33,20 +33,45 @@ main h1{
     text-align: center;
 }
 
-main p{
+.row{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 20px;
+}
+
+.row label{
+    display: inline-block;
+    width: 49%;
+}
+
+.row label p{
     text-align: center;
     color: white;
     font-family: 'Open Sans';
     font-weight: 700;
-    width: 80%;
-    font-size: 1.2em;
-    position: relative;
-    transform: translate(-50%);
-    left: 50%;
+    height: 100px;
+    font-size: 0.8em;
+    display: inline-block;
 }
 
-main img{
-    width: 150px;
+#btn_mais{
+    background-color: #ffe136;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+.row img{
+    width: 49%;
+    display: inline-block;
 }
 
 
