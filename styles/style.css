@@ -18,12 +18,14 @@
 
 body{
     background-color: #5d17eb;
+    width: 100vw;
 }
 
 main{
     width: 100%;
     text-align: center;
     margin-top: 50px;
+    background-color: red;
 }
 
 main h1{
@@ -63,7 +65,7 @@ main h1{
 }
 
 #btn_mais{
-    background-color: #ffe136;
+    background-color: #fece00;
     border: none;
     color: white;
     text-transform: uppercase;
@@ -86,4 +88,10 @@ iframe{
 
 footer{
     height: 50px;
+}
+
+#calculo{
+    width: 90%;
+    height: 300px;
+    background-color: #fece00;
 }
