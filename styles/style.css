@@ -58,6 +58,8 @@ main h1{
     height: 100px;
     font-size: 0.8em;
     display: inline-block;
+    text-align: justify;
+    
 }
 
 #btn_mais{
@@ -74,4 +76,8 @@ main h1{
 .row img{
     width: 49%;
     display: inline-block;
+}
+
+footer{
+    height: 50px;
 }
