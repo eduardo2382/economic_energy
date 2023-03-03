@@ -78,6 +78,10 @@ main h1{
     display: inline-block;
 }
 
+iframe{
+    width: 85vw;
+}
+
 footer{
     height: 50px;
 }
