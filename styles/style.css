@@ -31,6 +31,7 @@ main h1{
     text-transform: uppercase;
     color: #ffe136;
     text-align: center;
+    font-size: 2em;
 }
 
 .row{
@@ -45,7 +46,7 @@ main h1{
 }
 
 .row label{
-    display: inline-block;
+    display: block;
     width: 49%;
 }
 
@@ -74,7 +75,3 @@ main h1{
     width: 49%;
     display: inline-block;
 }
-
-
-
-
