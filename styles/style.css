@@ -10,25 +10,6 @@
     src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
-@keyframes sair {
-    0%{
-        opacity: 1;
-    } 
-    100%{
-        left: 0;
-        opacity: 0;
-    }
-}
-
-@keyframes entrar {
-    0%{
-        transform: translate3d(110%, -200px, 0);
-    } 
-    100%{
-        transform: translate3d(0, -200px, 0);
-    }
-}
-
 *{
     box-sizing: border-box;
     padding: 0;
@@ -111,19 +92,17 @@ footer{
 
 #sectionCalculo{
     height: 200px;
-    display: block;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
     margin-top: 50px;
-    overflow-x: hidden;
 }
 
 .areaCalculo{
-    width: 85%;
+    width: 100%;
+    flex: 0 0 auto;
     height: 200px;
-    position: relative;
-    border-radius: 10px;
     padding: 20px 10px;
-    display: inline-block;
-    vertical-align: center;
     transition: 1s;
 }
 
@@ -149,21 +128,9 @@ h2{
 }
 
 #calculoEstado{
-    position: relative;
-    transform: translate3d(110%, -200px, 0);
     opacity: 0;
 }
 
 footer{
     width: 100%;
-}
-
-.animateSair{
-    transform: translate3d(-200px, 0, 0) !important;
-    opacity: 0 !important;
-}
-
-.animateEntrar{
-    transform: translate3d(0, -200px, 0) !important;
-    opacity: 1 !important;
 }
