@@ -1,6 +1,6 @@
 const btn_comecar = document.getElementById('btnComecar')
 const calculoinicio = document.getElementById('calculoinicio') 
-var calculoestado = document.getElementById('calculoestado') 
+var calculoestado = document.getElementById('calculoEstado') 
 
 const delay = 500
 
