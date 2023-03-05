@@ -85,7 +85,7 @@ main h1{
     
 }
 
-#btn-mais, #btn-site{
+#btnMais, #btnSite{
     background-color: #fece00;
     border: none;
     color: white;
@@ -109,6 +109,10 @@ iframe{
 
 footer{
     height: 50px;
+}
+
+#sectionCalculo{
+    height: 200px;
 }
 
 .areaCalculo{
