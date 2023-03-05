@@ -119,7 +119,7 @@ footer{
 .areaCalculo{
     margin-top: 50px;
     width: 85%;
-    position: relative;
+    position: absolute;
     left: 50%;
     height: 200px;
     transform: translate(-50%);
