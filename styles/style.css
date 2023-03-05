@@ -17,18 +17,15 @@
     100%{
         left: 0;
         opacity: 0;
-        display: none;
     }
 }
 
 @keyframes entrar {
     0%{
-        opacity: 0;
-        left: 100%;
+        transform: translate3d(110%, -200px, 0);
     } 
     100%{
-        opacity: 1;
-        left: 50%;
+        transform: translate3d(0, -200px, 0);
     }
 }
 
@@ -41,6 +38,7 @@
 body{
     background-color: #5d17eb;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 main{
@@ -114,21 +112,19 @@ footer{
 #sectionCalculo{
     height: 200px;
     display: block;
+    margin-top: 50px;
+    overflow-x: hidden;
 }
 
 .areaCalculo{
-    margin-top: 50px;
     width: 85%;
-    position: absolute;
-    left: 50%;
     height: 200px;
-    transform: translate(-50%);
+    position: relative;
     border-radius: 10px;
     padding: 20px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    display: inline-block;
+    vertical-align: center;
+    transition: 1s;
 }
 
 
@@ -149,10 +145,13 @@ h2{
     padding: 5px 10px;
     border-radius: 5px;
     margin-top: 25px;
+    position: relative;
 }
 
 #calculoEstado{
-    display: none;
+    position: relative;
+    transform: translate3d(110%, -200px, 0);
+    opacity: 0;
 }
 
 footer{
@@ -161,12 +160,11 @@ footer{
 }
 
 .animateSair{
-    animation: sair .5s ease-out;
-    opacity: 0;
+    transform: translate3d(-200px, 0, 0) !important;
+    opacity: 0 !important;
 }
 
 .animateEntrar{
-    animation: entrar 1s ease-out;
-    opacity: 1;
-    display: flex;
+    transform: translate3d(0, -200px, 0) !important;
+    opacity: 1 !important;
 }

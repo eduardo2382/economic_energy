@@ -1,17 +1,8 @@
-const btn_comecar = document.getElementById('btnComecar')
-const calculoinicio = document.getElementById('calculoinicio') 
-var calculoestado = document.getElementById('calculoEstado') 
+const botao = document.getElementById('btnComecar')
+const calculoEstado = document.getElementById('calculoEstado')
+const calculoinicio = document.getElementById('calculoinicio')
 
-const delay = 500
-
-var etapa = ['estado', 'aparelho', 'potencia', 'finalizar']
-
-btn_comecar.addEventListener('click', function(){
+botao.addEventListener('click', function(){
     calculoinicio.classList.add('animateSair')
-    setTimeout(function(){
-        calculoinicio.style.display = 'none'
-        calculoestado.classList.add('animateEntrar')
-        calculoestado.style.display = 'flex'
-    }, delay)
+    calculoEstado.classList.add('animateEntrar')
 })
-
