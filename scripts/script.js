@@ -9,9 +9,11 @@ var etapa = ['estado', 'aparelho', 'potencia', 'finalizar']
 btn_comecar.addEventListener('click', function(){
     calculoinicio.classList.add('animateSair')
     setTimeout(function(){
+        document.documentElement.style.overflow = 'hidden';
         calculoinicio.style.display = 'none'
         calculoestado.classList.add('animateEntrar')
         calculoestado.style.display = 'flex'
+        document.documentElement.style.overflow = 'scroll';
     }, delay)
 })
 
