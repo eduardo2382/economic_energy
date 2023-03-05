@@ -19,7 +19,6 @@
 body{
     background-color: #5d17eb;
     width: 100vw;
-    overflow: hidden;
 }
 
 main{
@@ -95,6 +94,7 @@ footer{
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
+    overflow: hidden;
     margin-top: 50px;
 }
 
