@@ -37,15 +37,18 @@
                     Aqui você poderá calcular o quanto gasta seu aparelho
                 </h2>
                 <button id="btnComecar" class="btnAvancar">
-                    Comecar
+                    Começar
                 </button>
             </section>
             <section class="areaCalculo" id="calculoEstado">
                 <h2>
-                    Selecione o seu estado para que possamos saber o preço da tarifa cobrada na sua região
+                    Selecione o seu estado para que possamos saber o preço da tarifa cobrada na sua região:
                 </h2>
 
-                <select name="estado" id="selectEstado">
+                <select name="estado" id="selectEstado" required>
+                    <option value="" selected disabled>
+                        Selecionar estado:
+                    </option>
                     <option value="Acre">
                         Acre
                     </option>
@@ -135,17 +138,56 @@
                     </button>
 
                     <button class="btnAvancar" id="btnEstado">
-                        Calculo
+                        Avançar
                     </button>
                 </label>
             </section>
-            <section class="areaCalculo" id="calculoEstado">
-                <h2>Etapa2</h2>
-                <button class="btnAvancar" id="btnEstado">Calculo</button>
+            <section class="areaCalculo" id="calculoAparelho">
+                <h2>
+                    Selecione um aparelho na lista abaixo:
+                </h2>
+
+                <select name="aparelho" id="selectAparelho">
+                    <option value="" selected disabled>
+                        Selecionar aparelho:
+                    </option>
+                    <option value="Microondas">
+                        Microondas
+                    </option>
+                    <option value="Geladeira">
+                        Geladeira
+                    </option>
+                    <option value="Televisão">
+                        Televisão
+                    </option>
+                    <option value="Ventilador">
+                        Ventilador
+                    </option>
+                    <option value="Carregador de Celular">
+                        Carregador de Celular
+                    </option>
+                    <option value="Ferro de Passar Roupa">
+                        Ferro de Passar Roupa
+                    </option>
+                </select>
+
+                <label for="" id="labelBtn">
+                    <button class="btnVoltar">
+                        Voltar
+                    </button>
+
+                    <button class="btnAvancar" id="btnEstado">
+                        Avançar
+                    </button>
+                </label>
             </section>
-            <section class="areaCalculo" id="calculoEstado">
-                <h2>Etapa3</h2>
-                <button class="btnAvancar" id="btnEstado">Calculo</button>
+            <section class="areaCalculo" id="calculoTempo">
+                <h2>
+                    Selecione o tempo médio que esse aparelho fica ligado por dia:
+                </h2>
+                <button class="btnAvancar" id="btnEstado">
+                    Avançar
+                </button>
             </section>
         </section>
     </main>
