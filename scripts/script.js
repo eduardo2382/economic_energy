@@ -1,12 +1,16 @@
-const btnCalculo = document.querySelectorAll('.btnCalculo')
+const btnAvancar = document.querySelectorAll('.btnAvancar')
 const areaCalculo = document.getElementsByClassName('areaCalculo')
 
 
-btnCalculo.forEach(function(btn, i){
+btnAvancar.forEach(function(btn, i){
     btn.addEventListener('click', function(){
-        animateSair(areaCalculo[i], i+1)
-        animateEntrar(areaCalculo[i+1], i+1)
-        console.log('ola')
+        if(i == btnAvancar.length - 1){
+            console.log("acabou")
+        } else{
+            console.log(i)
+            animateSair(areaCalculo[i], i+1)
+            animateEntrar(areaCalculo[i+1], i+1)
+        }
     })
 })
 
