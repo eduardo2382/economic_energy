@@ -116,12 +116,12 @@ h2{
 }
 
 #selectEstado{
-    width: 70%;
+    width: 81%;
     margin-top: 20px;
     border: none;
     border-radius: 3px;
-    padding: 10px 5px;
-    font-size: 1em;
+    padding: 10px 10px;
+    font-size: 1.2em;
 }
 
 .btnAvancar{
@@ -135,7 +135,18 @@ h2{
     padding: 5px 10px;
     border-radius: 5px;
     margin-top: 25px;
-    position: relative;
+}
+
+.btnVoltar{
+    background-color: white;
+    width: 40%;
+    border: none;
+    color: black;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 25px;
 }
 
 #calculoEstado{
