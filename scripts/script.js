@@ -1,7 +1,23 @@
 const btnAvancar = document.querySelectorAll('.btnAvancar')
 const btnVoltar = document.querySelectorAll('.btnVoltar')
+
 const areaCalculo = document.getElementsByClassName('areaCalculo')
+
+const selectEstado = document.getElementById('selectEstado')
 const selectAparelho = document.getElementById('selectAparelho')
+
+
+selectAparelho.addEventListener('change', function(){
+    let = optionSelected = selectAparelho.options[selectAparelho.selectedIndex].value
+    let avisoAparelho = document.getElementById('avisoAparelho')
+
+    if(optionSelected == 'outro'){
+        avisoAparelho.style.display = 'inline-block'
+    } else{
+        avisoAparelho.style.display = 'none'
+    }
+})
+
 
 btnVoltar.forEach(function(btn, i){
     btn.addEventListener('click', function(){
