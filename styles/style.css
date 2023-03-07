@@ -90,7 +90,6 @@ footer{
 }
 
 #sectionCalculo{
-    height: 250px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -102,7 +101,6 @@ footer{
 .areaCalculo{
     width: 100%;
     flex: 0 0 auto;
-    height: 2650px;
     padding: 20px 10px;
     transition: 1s;
 }
@@ -153,6 +151,10 @@ select{
     opacity: 0;
 }
 
-footer{
-    width: 100%;
+section p{
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    margin-top: 20px;
+    display: none;
 }
