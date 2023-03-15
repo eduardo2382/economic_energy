@@ -46,7 +46,7 @@
                 </h2>
 
                 <select name="estado" id="selectEstado" required>
-                    <option value="" selected disabled>
+                    <option value="invalid" selected disabled>
                         Selecionar estado:
                     </option>
                     <option value="acre">
@@ -148,7 +148,7 @@
                 </h2>
 
                 <select name="aparelho" id="selectAparelho">
-                    <option value="" selected disabled>
+                    <option value="invalid" selected disabled>
                         Selecionar aparelho:
                     </option>
                     <option value="microondas">
@@ -186,9 +186,17 @@
                     </button>
                 </label>
             </section>
-            <section class="areaCalculo" id="calculoTempo">
+            <section class="areaCalculo" id="calculoNovoAparelho">
                 <h2>
-                    Selecione o tempo médio que esse aparelho fica ligado por dia:
+                    Cadastre um novo aparelho:
+                </h2>
+                <button class="btnAvancar" id="btnEstado">
+                    Avançar
+                </button>
+            </section>
+            <section class="areaCalculo" id="calculo">
+                <h2>
+                    Ola
                 </h2>
                 <button class="btnAvancar" id="btnEstado">
                     Avançar
