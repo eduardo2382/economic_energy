@@ -90,22 +90,18 @@ function verificarSelect(select){
 
 selectAparelho.addEventListener('change', function(){
     let optionSelected = selectAparelho.options[selectAparelho.selectedIndex].value
+    let avisoAparelho = document.getElementById('avisoAparelho')
 
 
     if(optionSelected == 'outro'){
-        if(!(calculoNovoAparelho.style.display == 'none')){
+        calculoNovoAparelho.style.display = 'inline-block'
+        calculoNovoAparelho.classList.add('areaCalculo')
+        avisoAparelho.style.display = 'block'
+    } else{
             calculoNovoAparelho.style.display = 'none'
             calculoNovoAparelho.classList.remove('areaCalculo')
-            console.log('teste')
-        }
-    } else{
-        if(calculoNovoAparelho.style.display == 'none'){
-            calculoNovoAparelho.style.display = 'inline-block'
-            calculoNovoAparelho.classList.add('areaCalculo')
-        }
+            avisoAparelho.style.display = 'none'
     }
-
-    console.log(document.getElementsByClassName('areaCalculo'))
-
+    
     avancar()
 })
