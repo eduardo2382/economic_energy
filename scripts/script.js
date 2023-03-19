@@ -5,6 +5,8 @@ const btnVoltar = document.querySelectorAll('.btnVoltar')
 const sectionCalculo = document.getElementById('sectionCalculo')
 const calculoNovoAparelho = document.getElementById('calculoNovoAparelho')
 
+const potenciaNovoAparelho = document.getElementById('potenciaNovoAparelho')
+
 
 const selectEstado = document.getElementById('selectEstado')
 const selectAparelho = document.getElementById('selectAparelho')
