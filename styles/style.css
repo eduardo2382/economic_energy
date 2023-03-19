@@ -112,13 +112,18 @@ h2{
     font-size: 1.5em;
 }
 
-select{
+select, input{
     width: 81%;
     margin-top: 20px;
     border: none;
     border-radius: 3px;
     padding: 10px 10px;
     font-size: 1.2em;
+}
+
+input{
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 .btnAvancar{
