@@ -5,6 +5,7 @@ const btnVoltar = document.querySelectorAll('.btnVoltar')
 const sectionCalculo = document.getElementById('sectionCalculo')
 const calculoNovoAparelho = document.getElementById('calculoNovoAparelho')
 
+const nomeNovoAparelho = document.getElementById('nomeNovoAparelho')
 const potenciaNovoAparelho = document.getElementById('potenciaNovoAparelho')
 
 
@@ -14,37 +15,7 @@ const selectAparelho = document.getElementById('selectAparelho')
 
 avancar()
 
-function avancar(){
-    btnAvancar.forEach(function(btn, i){
-        btn.addEventListener('click', function(){
 
-            if(i == 1){
-                if(verificarSelect(selectEstado)){
-                    animatePassarArea(i)
-                }
-            } else if(i == 2){
-                if(verificarSelect(selectAparelho)){
-                    animatePassarArea(i)
-                    
-                }
-            } else{
-                animatePassarArea(i)
-            }
-    })
-})
-}
-
-
-function animatePassarArea(i){
-    let areaCalculo = document.getElementsByClassName('areaCalculo')
-
-    if(i == btnAvancar.length - 1){
-        console.log("acabou")
-    } else{
-        animateSair(areaCalculo[i], i+1, 'esquerda')
-        animateEntrar(areaCalculo[i+1], i+1, 'esquerda')
-    }
-}
 
 btnVoltar.forEach(function(btn, i){
     btn.addEventListener('click', function(){
@@ -59,6 +30,63 @@ btnVoltar.forEach(function(btn, i){
         }
     })
 })
+
+selectAparelho.addEventListener('change', function(){
+    let optionSelected = selectAparelho.options[selectAparelho.selectedIndex].value
+    let avisoAparelho = document.getElementById('avisoAparelho')
+
+
+    if(optionSelected == 'outro'){
+        calculoNovoAparelho.style.display = 'inline-block'
+        calculoNovoAparelho.classList.add('areaCalculo')
+        avisoAparelho.style.display = 'block'
+    } else{
+            calculoNovoAparelho.style.display = 'none'
+            calculoNovoAparelho.classList.remove('areaCalculo')
+            avisoAparelho.style.display = 'none'
+    }
+    
+    avancar()
+})
+
+function avancar(){
+    btnAvancar.forEach(function(btn, i){
+        btn.addEventListener('click', function(){
+
+            if(selectAparelho.value == 'outro'){
+                if(i == 1){
+                    if(verificarSelect(selectEstado)){
+                        animatePassarArea(i)
+                    }
+                } else if(i == 2){
+                    if(verificarSelect(selectAparelho)){
+                        animatePassarArea(i)
+                        
+                    }
+                } else if(i == 3){
+                    if(verificarInput(nomeNovoAparelho) && verificarInput(potenciaNovoAparelho)){
+                        animatePassarArea(i)
+                    }
+                } else{
+                    animatePassarArea(i)
+                }
+            } else{
+                if(i == 1){
+                    if(verificarSelect(selectEstado)){
+                        animatePassarArea(i)
+                    }
+                } else if(i == 2){
+                    if(verificarSelect(selectAparelho)){
+                        animatePassarArea(i)
+                    }
+                } else{
+                    animatePassarArea(i)
+                }
+            }
+
+    })
+})
+}
 
 function animateSair(elemento, vezes=1, lado){
     if(lado == 'esquerda'){
@@ -90,20 +118,25 @@ function verificarSelect(select){
     }
 }
 
-selectAparelho.addEventListener('change', function(){
-    let optionSelected = selectAparelho.options[selectAparelho.selectedIndex].value
-    let avisoAparelho = document.getElementById('avisoAparelho')
-
-
-    if(optionSelected == 'outro'){
-        calculoNovoAparelho.style.display = 'inline-block'
-        calculoNovoAparelho.classList.add('areaCalculo')
-        avisoAparelho.style.display = 'block'
+function verificarInput(input){
+    if(input.value.length > 0){
+        return true
     } else{
-            calculoNovoAparelho.style.display = 'none'
-            calculoNovoAparelho.classList.remove('areaCalculo')
-            avisoAparelho.style.display = 'none'
+        return false
     }
-    
-    avancar()
-})
+}
+
+function animatePassarArea(i){
+    let areaCalculo = document.getElementsByClassName('areaCalculo')
+
+    if(i == btnAvancar.length - 1){
+        console.log("acabou")
+    } else{
+        animateSair(areaCalculo[i], i+1, 'esquerda')
+        animateEntrar(areaCalculo[i+1], i+1, 'esquerda')
+    }
+}
+
+
+
+
