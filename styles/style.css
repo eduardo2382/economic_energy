@@ -188,5 +188,8 @@ table{
 
 td{
     width: 30vw;
-    border: 1px solid black;
+}
+
+td:nth-child(3){
+    background-color: red;
 }
