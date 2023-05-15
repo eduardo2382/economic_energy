@@ -154,3 +154,39 @@ section p{
     font-size: 1.1em;
     display: none;
 }
+
+#calculoNovoAparelho{
+    display: none;
+}
+
+#areaNovoAparelho{
+    margin-top: 20px;
+    display: none;
+}
+
+#calculoResultado{
+    width: 100%;
+    text-align: center;
+}
+
+#labelResultado{
+    width: 85%;
+    height: 100px;
+    background-color: white;
+    margin-top: 20px;
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+table{
+    background-color: white;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+td{
+    width: 30vw;
+    border: 1px solid black;
+}

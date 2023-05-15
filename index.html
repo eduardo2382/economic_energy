@@ -176,6 +176,13 @@
 
                 <p id="avisoAparelho">Na próxima etapa você poderá definir de maneira manual a potencia do seu aparelho</p>
 
+                <div id="areaNovoAparelho">
+                    <h2>
+                        Cadastre um aparelho manualmente:
+                    </h2>
+                    <input type="number" name="potenciaNovoAparelho" id="potenciaNovoAparelho" placeholder="Potencia do Aparelho em Watts" required>
+                </div>
+
                 <label for="" id="labelBtn">
                     <button class="btnVoltar">
                         Voltar
@@ -186,29 +193,38 @@
                     </button>
                 </label>
             </section>
-            <section class="areaCalculo" id="calculoNovoAparelho">
-                <h2>
-                    Cadastre um aparelho manualmente:
-                </h2>
-
-                <input type="text" placeholder="Nome do Aparelho" name="nomeNovoAparelho" id="nomeNovoAparelho" required>
-
-                <input type="number" name="potenciaNovoAparelho" id="potenciaNovoAparelho" placeholder="Potencia do Aparelho em Watts" required>
-            
-                <button class="btnAvancar" id="btnEstado">
-                    Avançar
-                </button>
-            </section>
             <section class="areaCalculo" id="calculoTempo">
                 <h2>
                     Informe em media quanto tempo esse aparelho fica ligado por dia:
                 </h2>
 
-                <input type="time" name="tempoAparelho" id="tempoAparelho">
+                <input type="time" name="tempoAparelho" id="tempoAparelho" min="00:00" value="00:00">
 
-                <button class="btnAvancar" id="btnEstado">
-                    Avançar
-                </button>
+                <label for="" id="labelBtn">
+                    <button class="btnVoltar">
+                        Voltar
+                    </button>
+
+                    <button class="btnAvancar" id="btnEstado">
+                        Avançar
+                    </button>
+                </label>
+            </section>
+            <section class="areaCalculo" id="calculoResultado">
+                <h2 style="margin-bottom: 20px;">De acordo com os dados fornecidos, essa é a média de consumo do seu aparelho:</h2>
+
+                <label for="" id="labelResultado">
+                    <table>
+                        <tr>
+                            <td>Tarifa Cobrada No Seu Estado</td>
+                            <td>Tudo</td>
+                        </tr>
+                        <tr>
+                            <td>Bem</td>
+                            <td>ola</td>
+                        </tr>
+                    </table>
+                </label>
             </section>
         </section>
     </main>
