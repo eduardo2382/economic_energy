@@ -33,6 +33,7 @@ btnAvancar.forEach( (item, index) => { // obtem todos os botões avancar
                 break
 
             case 3:
+                document.getElementById('labelResultado').style.display = 'block'
                 avancar(index)
         
             default:

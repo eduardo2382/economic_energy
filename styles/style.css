@@ -176,6 +176,7 @@ section p{
     display: block;
     border-radius: 20px;
     padding: 15px 10px;
+    display: none;
 }
 
 table{
